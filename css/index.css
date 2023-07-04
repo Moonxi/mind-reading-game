@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mind-reading-container {
+  width: 95%;
+  height: 670px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.mind-reading-left {
+  font-size: 16px;
+  text-align: center;
+}
+.mind-reading-roulette {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background: url('../images/bg.gif');
+  background-size: cover;
+  transition: all 2s;
+}
+
+.mind-reading-roullete-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 156px;
+  height: 156px;
+  transform: translate(-50%, -50%);
+  background: url('../images/round.png') no-repeat center;
+}
+
+.mind-reading-desc p {
+  height: 50px;
+  width: 310px;
+}
+.mind-reading-again {
+  width: 100px;
+  height: 25px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #000;
+  visibility: hidden;
+}
+.mind-reading-again:active{
+  color: #000;
+  background-color: #fff;
+}
+.mind-reading-right {
+  flex: 0.9;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(20, 5%);
+}
+.mind-reading-right-item {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center; 
+}
+.mind-reading-right-item span {
+  display: flex;
+  height: 50%;
+  line-height: 100%;
+  align-items: center;
+}
+.mind-reading-right-item img {
+  height: 80%;
+  object-fit: cover;
+}
